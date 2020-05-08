@@ -16,9 +16,11 @@ import com.config.Constants;
 
 public class HomePage {
 	@FindBy(css = "#nav-hamburger-menu")
-	private WebElement menuBtnPosition;
-	@FindBy(css = "#nav-hamburger-menu")
 	private WebElement menuBtn;
+	@FindBy(css="#hmenu-customer-avatar-icon")
+	private WebElement HelloSignInLogoInMenuBtn;
+	@FindBy(css="#hmenu-customer-name")
+	private WebElement HelloSignInTextInMenuBtn;
 	@FindBy(css = "#hmenu-canvas-background > div")
 	private WebElement closeMunuBtn;
 	@FindBy(css = "span.nav-sprite.nav-logo-base")
@@ -37,10 +39,8 @@ public class HomePage {
 	private WebElement searchBtn;
 	@FindBy(css = "#nav-search-submit-text")
 	private WebElement searchBtnLogo;
-	
 	@FindBy(css = "#nav-tools>a")
 	private WebElement customerServiceToobar;
-	
 	@FindBy(css = "span.nav-line-1>span:nth-child(1)")
 	private WebElement EN_GlobalImage;
 	@FindBy(css = "#icp-nav-flyout>span>span>span.icp-nav-language")
@@ -93,19 +93,27 @@ public class HomePage {
 
 	//This method to verify dimension of position and dimension of Menu button
 	public void getMenuBtnPostion_Dimension() {
-		Constants.element= menuBtnPosition;
+		Constants.element= menuBtn;
 	}
+	
 	// This method to click on menu tab
 	public void clickOnMenuTab() {
 		menuBtn.click();
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
-			System.out.println("Unable to find Element");
+			System.out.println("Unable to find Element"+e.getMessage());
 			e.printStackTrace();
 		}
 	}
-
+// This method to verify Hello.SignIn Logo after clicking on menu button
+	public boolean getHelloSignInLogoInMenuBtn() {
+		return HelloSignInLogoInMenuBtn.isDisplayed();
+	}
+	//This method to verify Hello.SignIn Text after clicking on menu button
+	public String getHelloSignInTextInMenuBtn() {
+		return HelloSignInTextInMenuBtn.getText();
+	}
 // This method to close the menu tab
 	public void closeMunuTab() {
 		closeMunuBtn.click();
@@ -165,7 +173,11 @@ public class HomePage {
 		String color = allCategoriesDropdown.getCssValue("color");
 		return color;
 	}
-	
+	//This method to get Dimensions of All Categories Dropdown Box
+public void getSizeAllCategoriesDropdown() {
+	Constants.element=allCategoriesDropdown;
+	Constants.select = new Select(Constants.element);
+}
 
 	// This method to click on 'AllcategoriesDropDown'
 	public void clickOn_AllCategoriesDropdown() {
@@ -208,7 +220,7 @@ public class HomePage {
 		return color;
 	}
 	// This method to get dimensions of search Text Box
-	public void getSearchBtn_Position_Dimension() {
+	public void getSearchBtn_Dimension() {
 		Constants.element= searchBtn;
 		
 	}

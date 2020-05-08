@@ -9,6 +9,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+
 import ru.yandex.qatools.ashot.AShot;
 
 public class Constants {
@@ -26,4 +29,6 @@ public class Constants {
 	public static Object obj;
 	public static JSONObject jsonObj;
 	public static JSONArray jsonArray;
+	public static ExtentReports extent;
+	public static ExtentTest test;
 }

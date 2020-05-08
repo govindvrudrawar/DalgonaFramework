@@ -1,6 +1,5 @@
 package com.config;
 
-
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -30,6 +29,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
@@ -45,6 +47,8 @@ public class Keyword {
 	 * <li>IE</li> only above mention browsers can be open using this method
 	 * 
 	 * @param browserName
+	 * @author Sujit Kolhe
+	 * 
 	 */
 	public static void openBrowser(String browserName) {
 		switch (browserName) {
@@ -70,6 +74,8 @@ public class Keyword {
 	 * This method is used to launched the url in the browser is looking at. .
 	 * 
 	 * @param url
+	 * @author Sujit Kolhe
+	 * 
 	 */
 	public static void launchUrl(String url) {
 		Constants.driver.get(url);
@@ -79,6 +85,8 @@ public class Keyword {
 	/**
 	 * This method is used to maximizes the current window which recently launched
 	 * url.
+	 * 
+	 * @author Sujit Kolhe
 	 * 
 	 */
 	public static void maximizeBrowser() {
@@ -95,6 +103,8 @@ public class Keyword {
 	 * </ol>
 	 * 
 	 * @OutputType : jpg Type for the screenshot output
+	 * @author Sujit Kolhe
+	 * 
 	 */
 	public static void captureScreenshot(String screenshotPath, String fileName, String extension) {
 		TakesScreenshot ts = (TakesScreenshot) Constants.driver;
@@ -118,6 +128,8 @@ public class Keyword {
 	 * </ol>
 	 * 
 	 * @OutputType : jpg Type for the screenshot output
+	 * @author Sujit Kolhe
+	 * 
 	 */
 	public static void captureEntireScreenshot(String FullScreenshot, String fileName, String extension) {
 		Constants.ashot = new AShot();
@@ -145,6 +157,7 @@ public class Keyword {
 	 * method
 	 * 
 	 * @return WebElement
+	 * @author Sujit Kolhe
 	 * 
 	 */
 	public static WebElement getWebElement(String locatorType, String locatorValue) {
@@ -174,6 +187,8 @@ public class Keyword {
 	/**
 	 * This method is used to click on target web element on current page.
 	 * 
+	 * @author Sujit Kolhe
+	 * 
 	 */
 	public static void clickOnElement(String locatorType, String locatorValue) {
 		getWebElement(locatorType, locatorValue).click();
@@ -188,6 +203,9 @@ public class Keyword {
 	/**
 	 * This method is used to close, the opened tab in current window.
 	 * 
+	 * @author Sujit Kolhe
+	 * 
+	 * 
 	 */
 	public static void closedTab(String locatorType, String locatorValue) {
 		getWebElement(locatorType, locatorValue).click();
@@ -197,6 +215,8 @@ public class Keyword {
 	 * This method is used to verify, is this element displayed or not?
 	 *
 	 * @return Whether or not the element is displayed
+	 * @author Sujit Kolhe
+	 * 
 	 */
 	public static void getLogo(String locatorType, String locatorValue) {
 		boolean expected = getWebElement(locatorType, locatorValue).isDisplayed();
@@ -204,6 +224,8 @@ public class Keyword {
 
 	/**
 	 * This method is used to get the visible text of target element.
+	 * 
+	 * @author Sujit Kolhe
 	 * 
 	 */
 	public static void getElementText(String locatorType, String locatorValue) {
@@ -217,6 +239,7 @@ public class Keyword {
 	 * 
 	 * @param propertyName the css property name of the element
 	 * @return The current, computed value of the property.
+	 * @author Sujit Kolhe
 	 * 
 	 */
 	public static void getColor(String locatorType, String locatorValue, String propertyValue) {
@@ -226,6 +249,8 @@ public class Keyword {
 
 	/**
 	 * This method is used to hover on target element to move to on current window.
+	 * 
+	 * @author Sujit Kolhe
 	 * 
 	 */
 	public static void hoverOnElement(String locatorType, String locatorValue) {
@@ -246,6 +271,7 @@ public class Keyword {
 	 * 
 	 * @param propertyName the css property name of the element
 	 * @return The current, computed value of the property.
+	 * @author Sujit Kolhe
 	 * 
 	 */
 	public static void getColor_After_Hover(String locatorType, String locatorValue, String propertyValue) {
@@ -256,6 +282,8 @@ public class Keyword {
 
 	/**
 	 * This method is used to scroll.
+	 * 
+	 * @author Sujit Kolhe
 	 * 
 	 */
 	public static void scrolling() {
@@ -273,6 +301,8 @@ public class Keyword {
 	/**
 	 * This method is used to select the option from dropdown at the given index.
 	 * 
+	 * @author Sujit Kolhe
+	 * 
 	 */
 	public static void selectDropdown(String locatorType, String locatorValue, int indexToEnter) {
 		Constants.element = getWebElement(locatorType, locatorValue);
@@ -285,6 +315,8 @@ public class Keyword {
 	 * This method is used to typing the text in the target element.
 	 *
 	 * @param keysToSend character sequence to send to the element
+	 * @author Sujit Kolhe
+	 * 
 	 */
 	public static void enterText(String locatorType, String locatorValue, String textToEnter) {
 		getWebElement(locatorType, locatorValue).sendKeys(textToEnter);
@@ -293,7 +325,8 @@ public class Keyword {
 	/**
 	 * This method is used switch to on a different frame or window and to navigate
 	 * to back on previous window.
-	 *
+	 * 
+	 * @author Sujit Kolhe
 	 * 
 	 */
 	public static void navigateToBackPage(String locatorType, String locatorValue) {
@@ -315,6 +348,7 @@ public class Keyword {
 	 * @param filepath the path of the file to read
 	 * @throws IOException
 	 * @throws FileNotFoundException
+	 * @author Sujit Kolhe
 	 * 
 	 */
 
@@ -333,16 +367,20 @@ public class Keyword {
 	 * This method is used to switch to a different frame or window.
 	 *
 	 * @return A TargetLocator which can be used to select a frame or window
+	 * @author Sujit Kolhe
+	 * 
 	 */
-	public static void switchToWindow(int windowIndex) {
+	public static void windowHandles(int windowIndex) {
 		Set<String> newWindow = Constants.driver.getWindowHandles();
 		System.out.println(newWindow);
 		ArrayList<String> getWindow = new ArrayList(newWindow);
 		Constants.driver.switchTo().window(getWindow.get(windowIndex));
 
 		/**
-		 * This method is used to create logging operations, except configuration and See
-		 * {@getLogger(String)} detailed information.
+		 * This method is used to create logging operations, except configuration and *
+		 * See {@getLogger(String)} detailed information.
+		 * 
+		 * @author Sujit Kolhe
 		 * 
 		 */
 	}
@@ -356,6 +394,8 @@ public class Keyword {
 	 * This method is used to Close the current window, quitting the browser if it's
 	 * the last window currently open.
 	 * 
+	 * @author Sujit Kolhe
+	 * 
 	 */
 	public static void closeBrowser() {
 		Constants.driver.close();
@@ -363,6 +403,9 @@ public class Keyword {
 
 	/**
 	 * This method is used to quits this driver, closing every associated window.
+	 * 
+	 * @author Sujit Kolhe
+	 * 
 	 */
 	public static void closeAllBrowser() {
 		Constants.driver.quit();

@@ -1,33 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="42" passed="34" failed="8" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-10T07:05:08Z" name="Default suite" finished-at="2020-04-10T07:05:34Z" duration-ms="25179">
+  <suite started-at="2020-05-08T06:32:18Z" name="Default suite" finished-at="2020-05-08T06:35:01Z" duration-ms="162989">
     <groups>
     </groups>
-    <test started-at="2020-04-10T07:05:08Z" name="Default test" finished-at="2020-04-10T07:05:34Z" duration-ms="25179">
+    <test started-at="2020-05-08T06:32:18Z" name="Default test" finished-at="2020-05-08T06:35:01Z" duration-ms="162989">
       <class name="com.amazon.pages.HomePageTests">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.amazon.pages.HomePageTests@1a0dcaa]" started-at="2020-04-10T07:05:08Z" name="OpenBrowser" finished-at="2020-04-10T07:05:33Z" duration-ms="24835" status="PASS">
+        <test-method is-config="true" signature="HomePageTest_Report()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:32:17Z" name="HomePageTest_Report" finished-at="2020-05-08T06:32:18Z" duration-ms="1078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePageTest_Report -->
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:32:18Z" name="OpenBrowser" finished-at="2020-05-08T06:32:41Z" duration-ms="23081" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="tc_13()[pri:0, instance:com.amazon.pages.HomePageTests@1a0dcaa]" started-at="2020-04-10T07:05:33Z" name="tc_13" finished-at="2020-04-10T07:05:34Z" duration-ms="232" status="FAIL">
+        <test-method signature="tc_01()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:32:41Z" name="tc_01" finished-at="2020-05-08T06:32:41Z" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_01 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:32:41Z" name="tearTest" finished-at="2020-05-08T06:32:46Z" duration-ms="5109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_01 status=SUCCESS method=HomePageTests.tc_01()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_02()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:32:46Z" name="tc_02" finished-at="2020-05-08T06:32:47Z" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_02 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:32:47Z" name="tearTest" finished-at="2020-05-08T06:32:47Z" duration-ms="936" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_02 status=SUCCESS method=HomePageTests.tc_02()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_03()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:32:47Z" name="tc_03" finished-at="2020-05-08T06:33:16Z" duration-ms="28181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_03 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:16Z" name="tearTest" finished-at="2020-05-08T06:33:16Z" duration-ms="384" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_03 status=SUCCESS method=HomePageTests.tc_03()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_04()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:16Z" name="tc_04" finished-at="2020-05-08T06:33:20Z" duration-ms="3873" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_04 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:20Z" name="tearTest" finished-at="2020-05-08T06:33:20Z" duration-ms="343" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_04 status=SUCCESS method=HomePageTests.tc_04()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_05()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:20Z" name="tc_05" finished-at="2020-05-08T06:33:21Z" duration-ms="731" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[The following asserts failed:
-expected [38] but found [40],
-expected [581] but found [45],
-expected [266] but found [847],
-expected [11] but found [10]]]>
+              <![CDATA[expected [Hello. Sign in] but found [Hello, Sign in]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [38] but found [40],
-expected [581] but found [45],
-expected [266] but found [847],
-expected [11] but found [10]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-at com.amazon.pages.HomePageTests.tc_13(HomePageTests.java:149)
+              <![CDATA[java.lang.AssertionError: expected [Hello. Sign in] but found [Hello, Sign in]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.amazon.pages.HomePageTests.tc_05(HomePageTests.java:100)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -58,7 +119,864 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- tc_05 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:21Z" name="tearTest" finished-at="2020-05-08T06:33:23Z" duration-ms="1873" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_05 status=FAILURE method=HomePageTests.tc_05()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_06()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:23Z" name="tc_06" finished-at="2020-05-08T06:33:23Z" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_06 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:23Z" name="tearTest" finished-at="2020-05-08T06:33:24Z" duration-ms="216" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_06 status=SUCCESS method=HomePageTests.tc_06()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_07()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:24Z" name="tc_07" finished-at="2020-05-08T06:33:24Z" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_07 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:24Z" name="tearTest" finished-at="2020-05-08T06:33:24Z" duration-ms="275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_07 status=SUCCESS method=HomePageTests.tc_07()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_08()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:24Z" name="tc_08" finished-at="2020-05-08T06:33:33Z" duration-ms="8872" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_08 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:33Z" name="tearTest" finished-at="2020-05-08T06:33:33Z" duration-ms="453" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_08 status=SUCCESS method=HomePageTests.tc_08()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_09()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:33Z" name="tc_09" finished-at="2020-05-08T06:33:33Z" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_09 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:33Z" name="tearTest" finished-at="2020-05-08T06:33:34Z" duration-ms="208" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_09 status=SUCCESS method=HomePageTests.tc_09()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_10()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:34Z" name="tc_10" finished-at="2020-05-08T06:33:44Z" duration-ms="10468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_10 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:44Z" name="tearTest" finished-at="2020-05-08T06:33:45Z" duration-ms="528" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_10 status=SUCCESS method=HomePageTests.tc_10()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_11()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:45Z" name="tc_11" finished-at="2020-05-08T06:33:45Z" duration-ms="404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_11 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:45Z" name="tearTest" finished-at="2020-05-08T06:33:45Z" duration-ms="249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_11 status=SUCCESS method=HomePageTests.tc_11()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_12()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:45Z" name="tc_12" finished-at="2020-05-08T06:33:46Z" duration-ms="724" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [43] but found [44]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [43] but found [44]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at com.amazon.pages.HomePageTests.tc_12(HomePageTests.java:173)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_12 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:46Z" name="tearTest" finished-at="2020-05-08T06:33:48Z" duration-ms="1734" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_12 status=FAILURE method=HomePageTests.tc_12()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_13()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:48Z" name="tc_13" finished-at="2020-05-08T06:33:51Z" duration-ms="3334" status="PASS">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- tc_13 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:51Z" name="tearTest" finished-at="2020-05-08T06:33:52Z" duration-ms="400" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_13 status=SUCCESS method=HomePageTests.tc_13()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_14()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:52Z" name="tc_14" finished-at="2020-05-08T06:33:52Z" duration-ms="523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_14 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:52Z" name="tearTest" finished-at="2020-05-08T06:33:52Z" duration-ms="328" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_14 status=SUCCESS method=HomePageTests.tc_14()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_15()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:52Z" name="tc_15" finished-at="2020-05-08T06:33:56Z" duration-ms="3850" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_15 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:56Z" name="tearTest" finished-at="2020-05-08T06:33:57Z" duration-ms="276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_15 status=SUCCESS method=HomePageTests.tc_15()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_16()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:33:57Z" name="tc_16" finished-at="2020-05-08T06:34:01Z" duration-ms="4685" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Software] but found [Shoes & Handbags]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Software] but found [Shoes & Handbags]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.amazon.pages.HomePageTests.tc_16(HomePageTests.java:239)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_16 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:01Z" name="tearTest" finished-at="2020-05-08T06:34:03Z" duration-ms="1501" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_16 status=FAILURE method=HomePageTests.tc_16()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_17()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:03Z" name="tc_17" finished-at="2020-05-08T06:34:04Z" duration-ms="1000" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Amazon.in - Departments : Books, Movies, Music, Kindle, Mobiles, Cameras, Computers, Toys, Baby products, Health & Personal Care, Home & Kitchen, Pet Supplies, Sports & Outdoors, Watches, Fashion Jewellery, Luggage, Shoes & Handbags, Clothing & Accessories, Musical Instruments & Professional Audio, Office & Stationery, Car & Motorbike] but found [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Amazon.in - Departments : Books, Movies, Music, Kindle, Mobiles, Cameras, Computers, Toys, Baby products, Health & Personal Care, Home & Kitchen, Pet Supplies, Sports & Outdoors, Watches, Fashion Jewellery, Luggage, Shoes & Handbags, Clothing & Accessories, Musical Instruments & Professional Audio, Office & Stationery, Car & Motorbike] but found [Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.amazon.pages.HomePageTests.tc_17(HomePageTests.java:251)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_17 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:04Z" name="tearTest" finished-at="2020-05-08T06:34:06Z" duration-ms="2337" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_17 status=FAILURE method=HomePageTests.tc_17()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_18()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:06Z" name="tc_18" finished-at="2020-05-08T06:34:07Z" duration-ms="704" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [38] but found [40],
+expected [581] but found [45],
+expected [266] but found [856],
+expected [11] but found [10]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [38] but found [40],
+expected [581] but found [45],
+expected [266] but found [856],
+expected [11] but found [10]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.amazon.pages.HomePageTests.tc_18(HomePageTests.java:266)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_18 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:07Z" name="tearTest" finished-at="2020-05-08T06:34:09Z" duration-ms="2042" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_18 status=FAILURE method=HomePageTests.tc_18()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_19()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:09Z" name="tc_19" finished-at="2020-05-08T06:34:16Z" duration-ms="7196" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Software : Buy Security, Business, Office and Education software online at best prices in India - Amazon.in] but found [Shoes & Handbags: Buy Shoes & Handbags Online at Best Prices in India-Amazon.in]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Software : Buy Security, Business, Office and Education software online at best prices in India - Amazon.in] but found [Shoes & Handbags: Buy Shoes & Handbags Online at Best Prices in India-Amazon.in]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.amazon.pages.HomePageTests.tc_19(HomePageTests.java:279)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_19 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:16Z" name="tearTest" finished-at="2020-05-08T06:34:18Z" duration-ms="1920" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_19 status=FAILURE method=HomePageTests.tc_19()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_20()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:18Z" name="tc_20" finished-at="2020-05-08T06:34:18Z" duration-ms="392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_20 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:18Z" name="tearTest" finished-at="2020-05-08T06:34:19Z" duration-ms="302" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_20 status=SUCCESS method=HomePageTests.tc_20()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_21()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:19Z" name="tc_21" finished-at="2020-05-08T06:34:19Z" duration-ms="564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_21 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:19Z" name="tearTest" finished-at="2020-05-08T06:34:20Z" duration-ms="411" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_21 status=SUCCESS method=HomePageTests.tc_21()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_22()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:20Z" name="tc_22" finished-at="2020-05-08T06:34:20Z" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_22 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:20Z" name="tearTest" finished-at="2020-05-08T06:34:20Z" duration-ms="496" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_22 status=SUCCESS method=HomePageTests.tc_22()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_23()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:20Z" name="tc_23" finished-at="2020-05-08T06:34:21Z" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_23 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:21Z" name="tearTest" finished-at="2020-05-08T06:34:21Z" duration-ms="233" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_23 status=SUCCESS method=HomePageTests.tc_23()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_24()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:21Z" name="tc_24" finished-at="2020-05-08T06:34:21Z" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_24 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:21Z" name="tearTest" finished-at="2020-05-08T06:34:21Z" duration-ms="354" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_24 status=SUCCESS method=HomePageTests.tc_24()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_25()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:21Z" name="tc_25" finished-at="2020-05-08T06:34:27Z" duration-ms="5957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_25 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:27Z" name="tearTest" finished-at="2020-05-08T06:34:28Z" duration-ms="217" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_25 status=SUCCESS method=HomePageTests.tc_25()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_26()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:28Z" name="tc_26" finished-at="2020-05-08T06:34:28Z" duration-ms="168" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[search result text failed expected [Hello. Sign in] but found [Hello, Sign in]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: search result text failed expected [Hello. Sign in] but found [Hello, Sign in]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at com.amazon.pages.HomePageTests.tc_26(HomePageTests.java:346)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_26 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:28Z" name="tearTest" finished-at="2020-05-08T06:34:29Z" duration-ms="1527" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_26 status=FAILURE method=HomePageTests.tc_26()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_27()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:29Z" name="tc_27" finished-at="2020-05-08T06:34:29Z" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_27 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:29Z" name="tearTest" finished-at="2020-05-08T06:34:30Z" duration-ms="177" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_27 status=SUCCESS method=HomePageTests.tc_27()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_28()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:30Z" name="tc_28" finished-at="2020-05-08T06:34:34Z" duration-ms="4865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_28 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:34Z" name="tearTest" finished-at="2020-05-08T06:34:35Z" duration-ms="345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_28 status=SUCCESS method=HomePageTests.tc_28()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_29()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:35Z" name="tc_29" finished-at="2020-05-08T06:34:35Z" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_29 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:35Z" name="tearTest" finished-at="2020-05-08T06:34:35Z" duration-ms="388" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_29 status=SUCCESS method=HomePageTests.tc_29()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_30()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:35Z" name="tc_30" finished-at="2020-05-08T06:34:36Z" duration-ms="924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_30 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:36Z" name="tearTest" finished-at="2020-05-08T06:34:37Z" duration-ms="273" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_30 status=SUCCESS method=HomePageTests.tc_30()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_31()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:37Z" name="tc_31" finished-at="2020-05-08T06:34:40Z" duration-ms="3207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_31 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:40Z" name="tearTest" finished-at="2020-05-08T06:34:40Z" duration-ms="203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_31 status=SUCCESS method=HomePageTests.tc_31()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_32()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:40Z" name="tc_32" finished-at="2020-05-08T06:34:40Z" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_32 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:40Z" name="tearTest" finished-at="2020-05-08T06:34:41Z" duration-ms="260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_32 status=SUCCESS method=HomePageTests.tc_32()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_33()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:41Z" name="tc_33" finished-at="2020-05-08T06:34:41Z" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_33 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:41Z" name="tearTest" finished-at="2020-05-08T06:34:41Z" duration-ms="186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_33 status=SUCCESS method=HomePageTests.tc_33()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_34()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:41Z" name="tc_34" finished-at="2020-05-08T06:34:44Z" duration-ms="2930" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.amazon.pages.HomePageTests.tc_34(HomePageTests.java:426)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_34 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:44Z" name="tearTest" finished-at="2020-05-08T06:34:46Z" duration-ms="1912" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_34 status=FAILURE method=HomePageTests.tc_34()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_35()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:46Z" name="tc_35" finished-at="2020-05-08T06:34:46Z" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_35 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:46Z" name="tearTest" finished-at="2020-05-08T06:34:46Z" duration-ms="247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_35 status=SUCCESS method=HomePageTests.tc_35()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_36()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:46Z" name="tc_36" finished-at="2020-05-08T06:34:46Z" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_36 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:47Z" name="tearTest" finished-at="2020-05-08T06:34:47Z" duration-ms="219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_36 status=SUCCESS method=HomePageTests.tc_36()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_37()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:47Z" name="tc_37" finished-at="2020-05-08T06:34:47Z" duration-ms="152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_37 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:47Z" name="tearTest" finished-at="2020-05-08T06:34:47Z" duration-ms="292" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_37 status=SUCCESS method=HomePageTests.tc_37()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_38()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:47Z" name="tc_38" finished-at="2020-05-08T06:34:52Z" duration-ms="4797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_38 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:52Z" name="tearTest" finished-at="2020-05-08T06:34:52Z" duration-ms="370" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_38 status=SUCCESS method=HomePageTests.tc_38()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_39()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:52Z" name="tc_39" finished-at="2020-05-08T06:34:53Z" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_39 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:53Z" name="tearTest" finished-at="2020-05-08T06:34:53Z" duration-ms="248" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_39 status=SUCCESS method=HomePageTests.tc_39()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_40()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:53Z" name="tc_40" finished-at="2020-05-08T06:34:53Z" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_40 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:53Z" name="tearTest" finished-at="2020-05-08T06:34:53Z" duration-ms="289" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_40 status=SUCCESS method=HomePageTests.tc_40()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_41()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:53Z" name="tc_41" finished-at="2020-05-08T06:34:54Z" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_41 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:54Z" name="tearTest" finished-at="2020-05-08T06:34:54Z" duration-ms="355" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_41 status=SUCCESS method=HomePageTests.tc_41()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method signature="tc_42()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:54Z" name="tc_42" finished-at="2020-05-08T06:34:58Z" duration-ms="4435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_42 -->
+        <test-method is-config="true" signature="tearTest(org.testng.ITestResult)[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:58Z" name="tearTest" finished-at="2020-05-08T06:34:59Z" duration-ms="213" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_42 status=SUCCESS method=HomePageTests.tc_42()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.amazon.pages.HomePageTests@78e94dcf]" started-at="2020-05-08T06:34:59Z" name="quitDriver" finished-at="2020-05-08T06:35:01Z" duration-ms="2058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
       </class> <!-- com.amazon.pages.HomePageTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
