@@ -2,6 +2,7 @@ package com.amazon.pages;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebDriver;
@@ -13,12 +14,16 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 import com.config.Constants;
+import com.config.Keyword;
+import com.utility.PropertyUtility;
 
 public class HomePage {
 	@FindBy(css = "#nav-hamburger-menu")
-	private WebElement menuBtnPosition;
-	@FindBy(css = "#nav-hamburger-menu")
 	private WebElement menuBtn;
+	@FindBy(css = "#hmenu-customer-avatar-icon")
+	private WebElement HelloSignInLogoInMenuBtn;
+	@FindBy(css = "#hmenu-customer-name")
+	private WebElement HelloSignInTextInMenuBtn;
 	@FindBy(css = "#hmenu-canvas-background > div")
 	private WebElement closeMunuBtn;
 	@FindBy(css = "span.nav-sprite.nav-logo-base")
@@ -37,10 +42,8 @@ public class HomePage {
 	private WebElement searchBtn;
 	@FindBy(css = "#nav-search-submit-text")
 	private WebElement searchBtnLogo;
-	
 	@FindBy(css = "#nav-tools>a")
 	private WebElement customerServiceToobar;
-	
 	@FindBy(css = "span.nav-line-1>span:nth-child(1)")
 	private WebElement EN_GlobalImage;
 	@FindBy(css = "#icp-nav-flyout>span>span>span.icp-nav-language")
@@ -85,25 +88,68 @@ public class HomePage {
 	private WebElement applyPincodeBtn;
 	@FindBy(css = "#nav-xshop>a")
 	private WebElement shopping_Container;
+	@FindBy(xpath = "//a[text()='Mobiles']")
+	private WebElement mobile_option;
+	@FindBy(xpath = "//a[text()='Best Sellers']")
+	private WebElement best_Sellers_option;
+	@FindBy(xpath = "//a[text()='Pantry']")
+	private WebElement pantry_option;
+	@FindBy(xpath = "//a[text()='Amazon Pay']")
+	private WebElement amazon_pay_option;
+	@FindBy(xpath = "//a[text()='Computers']")
+	private WebElement computers_option;
+	@FindBy(xpath = "//a[text()='New Releases']")
+	private WebElement new_releases_option;
+	@FindBy(xpath = "//a[text()='Books']")
+	private WebElement books_option;
+	@FindBy(xpath = "//a[text()='Customer Service']")
+	private WebElement customer_service_option;
+	@FindBy(xpath = "//a[text()='Sell']")
+	private WebElement sell_option;
+	@FindBy(xpath = "//a[text()='Gift Ideas']")
+	private WebElement gift_ideas_option;
+	@FindBy(xpath = "//a[text()='Baby']")
+	private WebElement baby_option;
+	@FindBy(xpath = "//a[text()='AmazonBasics']")
+	private WebElement amazon_basics_option;
+	@FindBy(css = "#nav-al-title")
+	private WebElement yourListsText;
+	@FindBy(css = "#nav-al-wishlist>a")
+	private WebElement yourListsItems;
+	@FindBy(css = "#nav-al-your-account>div.nav-title")
+	private WebElement yourAccountText;
+	@FindBy(css = "#nav-al-your-account>a")
+	private WebElement yourAccountItems;
 
 	// This is to Initializing the page Objects
 	public HomePage() {
 		PageFactory.initElements(Constants.driver, this); // we can also write (currentclassname.class)
 	}
 
-	//This method to verify dimension of position and dimension of Menu button
+	// This method to verify dimension of position and dimension of Menu button
 	public void getMenuBtnPostion_Dimension() {
-		Constants.element= menuBtnPosition;
+		Constants.element = menuBtn;
 	}
+
 	// This method to click on menu tab
 	public void clickOnMenuTab() {
 		menuBtn.click();
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
-			System.out.println("Unable to find Element");
+			System.out.println("Unable to find Element" + e.getMessage());
 			e.printStackTrace();
 		}
+	}
+
+// This method to verify Hello.SignIn Logo after clicking on menu button
+	public boolean getHelloSignInLogoInMenuBtn() {
+		return HelloSignInLogoInMenuBtn.isDisplayed();
+	}
+
+	// This method to verify Hello.SignIn Text after clicking on menu button
+	public String getHelloSignInTextInMenuBtn() {
+		return HelloSignInTextInMenuBtn.getText();
 	}
 
 // This method to close the menu tab
@@ -165,7 +211,12 @@ public class HomePage {
 		String color = allCategoriesDropdown.getCssValue("color");
 		return color;
 	}
-	
+
+	// This method to get Dimensions of All Categories Dropdown Box
+	public void getSizeAllCategoriesDropdown() {
+		Constants.element = allCategoriesDropdown;
+		Constants.select = new Select(Constants.element);
+	}
 
 	// This method to click on 'AllcategoriesDropDown'
 	public void clickOn_AllCategoriesDropdown() {
@@ -207,12 +258,13 @@ public class HomePage {
 		String color = searchBtn.getCssValue("color");
 		return color;
 	}
+
 	// This method to get dimensions of search Text Box
-	public void getSearchBtn_Position_Dimension() {
-		Constants.element= searchBtn;
-		
+	public void getSearchBtn_Dimension() {
+		Constants.element = searchBtn;
+
 	}
-	
+
 	// This method to click on search button
 	public void clickOnSearchBtn() {
 		searchBtn.click();
@@ -303,13 +355,13 @@ public class HomePage {
 		TryPrimeText.click();
 	}
 
-	// This method to verify Cart icon
+	// This method to get 'Cart' icon
 	public boolean getCartIcon() {
 		boolean isDisplay = cartIcon.isDisplayed();
 		return isDisplay;
 	}
 
-	// This method to get Cart text
+	// This method to get 'Cart' text
 	public String getCartText() {
 		Constants.actual = cartText.getText();
 		return Constants.actual;
@@ -326,7 +378,7 @@ public class HomePage {
 		cartText.click();
 	}
 
-	// This method to verify address icon
+	// This method to display 'address' icon
 	public boolean getyourAddressIcon() {
 		boolean isDisplay = yourAddressIcon.isDisplayed();
 		return isDisplay;
@@ -338,11 +390,12 @@ public class HomePage {
 		return Constants.actual;
 	}
 
-	// This method to verify Select Your Address text
+	// This method to get 'Select Your Address' text
 	public String getSelectYourAddressText() {
 		Constants.actual = SelectYourAddressText.getText();
 		return Constants.actual;
 	}
+
 	public void clickOnSelectYourAddress() {
 		selectYourAdress.click();
 		try {
@@ -363,6 +416,99 @@ public class HomePage {
 		applyPincodeBtn.click();
 	}
 
-	
-	
+	// This method to click on 'Mobile' option from Shopping Container
+	public void clickOnMobile_Option() {
+		mobile_option.click();
+		Keyword.threadSleep();
+	}
+
+	// This method to click on 'Best Sellers' option from Shopping Container
+	public void clickOnBest_Sellers_Option() {
+		best_Sellers_option.click();
+		Keyword.threadSleep();
+	}
+
+	// This method to click on 'Pantry' option from Shopping Container
+	public void clickOnPantry_Option() {
+		pantry_option.click();
+		Keyword.threadSleep();
+	}
+
+	// This method to click on 'Amazon Pay' option from Shopping Container
+	public void clickOnAmazon_Pay_Option() {
+		amazon_pay_option.click();
+		Keyword.threadSleep();
+	}
+
+	// This method to click on 'Computers' option from Shopping Container
+	public void clickOnComputers_Option() {
+		computers_option.click();
+		Keyword.threadSleep();
+	}
+
+	// This method to click on 'New Releases' option from Shopping Container
+	public void clickOnNew_Releases_Option() {
+		new_releases_option.click();
+		Keyword.threadSleep();
+	}
+
+	// This method to click on 'Books' option from Shopping Container
+	public void clickOnBooks_Option() {
+		books_option.click();
+		Keyword.threadSleep();
+	}
+
+	// This method to click on 'Customer Service' option from Shopping Container
+	public void clickOnCustomer_Service_Option() {
+		customer_service_option.click();
+		Keyword.threadSleep();
+	}
+
+	// This method to click on 'Sell' option from Shopping Container
+	public void clickOnSell_Option() {
+		sell_option.click();
+		Keyword.threadSleep();
+	}
+
+	// This method to click on 'Gift Ideas' option from Shopping Container
+	public void clickOnGift_Ideas_Option() {
+		gift_ideas_option.click();
+		Keyword.threadSleep();
+	}
+
+	// This method to click on 'Baby' option from Shopping Container
+	public void clickOnBaby_Option() {
+		baby_option.click();
+		Keyword.threadSleep();
+	}
+
+	// This method to click on 'AmazonBasics' option from Shopping Container
+	public void clickOnAmazon_Basics_Option() {
+		amazon_basics_option.click();
+		Keyword.threadSleep();
+	}
+
+	// This method to get 'Your Lists' text from Account & List tool
+	public String getYourListsText() {
+		Keyword.hoverOnElement("CSS",PropertyUtility.getProperty("AccountAndList"));
+		Constants.actual = yourListsText.getText();
+		return Constants.actual;
+	}
+
+	// This method to get 'Your Lists' Items from Account & List tool
+	public void getYourListsItems() {
+		Keyword.hoverOnElement("CSS",PropertyUtility.getProperty("AccountAndList"));
+	}
+
+	// This method to get 'Your Account' text from Account & List tool
+	public String getYourAccountText() {
+		Keyword.hoverOnElement("CSS",PropertyUtility.getProperty("AccountAndList"));
+		Constants.actual = yourAccountText.getText();
+		return Constants.actual;
+	}
+
+	// This method to get 'Your Account' Items from Account & List tool
+	public void getyourAccountItems() {
+		Keyword.hoverOnElement("CSS",PropertyUtility.getProperty("AccountAndList"));
+	}
 }

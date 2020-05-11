@@ -1,14 +1,18 @@
 package com.config;
 
 import java.io.FileInputStream;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Properties;
 
+import org.apache.logging.log4j.Logger;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-
 import ru.yandex.qatools.ashot.AShot;
 
 public class Constants {
@@ -26,4 +30,10 @@ public class Constants {
 	public static Object obj;
 	public static JSONObject jsonObj;
 	public static JSONArray jsonArray;
+	public static Properties prop;
+	public static JavascriptExecutor jse;
+	public static Logger logger;
+	public static List<String> expectedList;
+	public static  ArrayList<String> actualList;
+	
 }

@@ -5,8 +5,11 @@
     <classes>
       <class name="com.amazon.pages.HomePageTests">
         <methods>
-          <include name="tc_13"/>
+          <include name="tc_58"/>
+          <include name="tearTest"/>
           <include name="OpenBrowser"/>
+          <include name="HomePageTest_Report"/>
+          <include name="quitDriver"/>
         </methods>
       </class> <!-- com.amazon.pages.HomePageTests -->
     </classes>
