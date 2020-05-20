@@ -25,7 +25,7 @@ public class PropertyUtility {
 	public static String getProperty(String key) {
 		String value = null;
 		try {
-			Constants.fis = new FileInputStream("src/main/resources/AmazonHome.properties");
+			Constants.fis = new FileInputStream("src/main/resources/Header.properties");
 			Properties p = new Properties();
 			p.load(Constants.fis);
 			value = p.getProperty(key);
@@ -42,7 +42,7 @@ public class PropertyUtility {
 		String screenshotPath= System.getProperty("user.dir")+"/Screenshot/" + fileName + " " + dateTimeFormat +".jpg";
 		try {
 		FileUtils.copyFile(src, new File(screenshotPath));
-		} catch (IOException e) {
+		} catch (IOException e) { 
 			System.out.println("Screenshot result failed");
 			e.printStackTrace();
 		}

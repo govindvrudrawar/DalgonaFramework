@@ -34,8 +34,8 @@ import com.config.ExtentsReport;
 import com.config.Keyword;
 import com.utility.PropertyUtility;
 
-public class HomePageTests extends ExtentsReport {
-	HomePage homepage;
+public class HeaderTests extends ExtentsReport {
+	Header header;
 
 	@BeforeTest
 	public void OpenBrowser() {
@@ -44,7 +44,7 @@ public class HomePageTests extends ExtentsReport {
 		Constants.actual = Constants.driver.getCurrentUrl();
 		Assert.assertTrue(Constants.actual.contains("https://www.amazon.in/"));
 		Keyword.maximizeBrowser();
-		homepage = new HomePage();
+		header = new Header();
 		Keyword.loggerInfo("entering appliction url and maximizing browser");
 		test = extent.createTest("Amazon Home page");
 	}
@@ -58,6 +58,7 @@ public class HomePageTests extends ExtentsReport {
 		test = extent.createTest("tc_01 verifying title of the home page");
 		test.log(Status.INFO, "verifying title of Amazon home page page");
 	}
+	
    @Test
    public void tc_02() {
 	   Keyword.captureScreenshot("Screenshot/","Snapshot", ".jpg");
@@ -74,7 +75,7 @@ public class HomePageTests extends ExtentsReport {
    }
 	@Test
 	public void tc_04() {
-		homepage.getMenuBtnPostion_Dimension();
+		header.getMenuBtnPostion_Dimension();
 		Rectangle searchBtnRect = Constants.element.getRect();
 		SoftAssert softassert = new SoftAssert();
 		softassert.assertEquals(searchBtnRect.getHeight(), 40);
@@ -89,8 +90,8 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_05() {
-		homepage.clickOnMenuTab();
-	    homepage.closeMunuTab();
+		header.clickOnMenuTab();
+	    header.closeMunuTab();
 		Keyword.loggerInfo("verifying by clicking on menu tab it open or not and and closing the menu tab");
 		test = extent.createTest("tc_05 verifying Menu tab");
 		test.log(Status.INFO, "verifying menu tab clickable or not ");
@@ -98,9 +99,9 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_06() {
-		homepage.clickOnMenuTab();
+		header.clickOnMenuTab();
 		Keyword.captureScreenshot("Screenshot/", "MenuTabScreenshot", ".jpg");
-		homepage.closeMunuTab();
+		header.closeMunuTab();
 		Keyword.loggerInfo("verifying by clicking on menu tab will it visible or not");
 		test = extent.createTest("tc_06 verifying Menu tab visibility");
 		test.log(Status.INFO, "verifying menu tab will it visible or not ");
@@ -109,8 +110,8 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_07() {
-		homepage.clickOnMenuTab();
-		homepage.getHelloSignInLogoInMenuBtn();
+		header.clickOnMenuTab();
+		header.getHelloSignInLogoInMenuBtn();
 		Assert.assertTrue(true);
 		Keyword.loggerInfo("verifying after clicking on menu button 'Hello.SignIn' logo visible or not");
 		test = extent.createTest("tc_07 get Hello Sign.in Logo in Menu button");
@@ -119,8 +120,8 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_08() {
-		String actualText = homepage.getHelloSignInTextInMenuBtn();
-		homepage.closeMunuTab();
+		String actualText = header.getHelloSignInTextInMenuBtn();
+		header.closeMunuTab();
 		Assert.assertEquals(actualText, "Hello, Sign in");
 		Keyword.loggerInfo("verify after clicking on menu button 'Hello.SignIn' text visible or not");
 		test = extent.createTest("tc_08 get Hello Sign.in text visible in Menu button");
@@ -129,7 +130,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_09() {
-		homepage.getAmazonLogo();
+		header.getAmazonLogo();
 		Assert.assertTrue(true);
 		Keyword.loggerInfo("verifying 'amazon' logo visible or not");
 		test = extent.createTest("tc_09 verifying amazon logo");
@@ -138,7 +139,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_10() {
-		homepage.inLogo();
+		header.inLogo();
 		Assert.assertTrue(true);
 		Keyword.loggerInfo("verifying '.in' logo visible or not");
 		test = extent.createTest("tc_10 verifying '.in' logo");
@@ -148,7 +149,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_11() {
-		homepage.clickOnAmazonLogo();
+		header.clickOnAmazonLogo();
 		Constants.actual = Constants.driver.getCurrentUrl();
 		Assert.assertTrue((Constants.actual).contains("https://www.amazon.in/ref=nav_logo"));
 		Constants.driver.navigate().back();
@@ -160,7 +161,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_12() {
-		String text = homepage.getTryPrimeText();
+		String text = header.getTryPrimeText();
 		Assert.assertEquals(text, "Try Prime", "search result text failed");
 		Keyword.loggerInfo("verifying 'Try Prime' text visible or not");
 		test = extent.createTest("tc_12 verifying 'Try Prime' text");
@@ -169,7 +170,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_13() {
-		homepage.clickOnTryprime();
+		header.clickOnTryprime();
 		Constants.actual = Constants.driver.getTitle();
 		System.out.println(Constants.actual);
 		Assert.assertTrue((Constants.actual).contains("Amazon.in: Amazon Prime"));
@@ -182,7 +183,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_14() {
-		Constants.actual = homepage.getColorAllcategoriesDropDown();
+		Constants.actual = header.getColorAllcategoriesDropDown();
 		Assert.assertEquals(Constants.actual, "rgba(255, 255, 255, 1)");
 		Keyword.loggerInfo("verifing background color of 'All Categories dropdown' before hover");
 		test = extent.createTest("tc_14 verifying color of 'All Categories dropdown' before hover");
@@ -191,7 +192,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_15() {
-		homepage.getSizeAllCategoriesDropdown();
+		header.getSizeAllCategoriesDropdown();
 		List<WebElement> allCategoriesList = Constants.select.getOptions();
 		int size = allCategoriesList.size();
 		Assert.assertEquals(size, 44);
@@ -202,7 +203,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_16() {
-		homepage.getSizeAllCategoriesDropdown();
+		header.getSizeAllCategoriesDropdown();
 		List<WebElement> allCategoriesList = Constants.select.getOptions();
 		ArrayList<String> actualallCategoriesList = new ArrayList();
 		Iterator<WebElement> itr1 = allCategoriesList.iterator();
@@ -218,7 +219,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_17() {
-		Constants.actual = homepage.getColor_AllcategoriesDropDown_AfterHover();
+		Constants.actual = header.getColor_AllcategoriesDropDown_AfterHover();
 		Assert.assertEquals(Constants.actual, "rgba(17, 17, 17, 1)");
 		Keyword.loggerInfo("verifing background color of 'All Categories dropdown' after hovering");
 		test = extent.createTest("tc_17 verifying color of 'All Categories dropdown' after hover");
@@ -227,26 +228,26 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_18() {
-		homepage.clickOn_AllCategoriesDropdown();
-		homepage.scrolling_AllcategoriesDropDown();
-   	homepage.clickOn_AllCategoriesDropdown();
+		header.clickOn_AllCategoriesDropdown();
+		header.scrolling_AllcategoriesDropDown();
+		header.clickOn_AllCategoriesDropdown();
 		Keyword.loggerInfo("scrolling 'All Categories' dropdown");
 		test = extent.createTest("tc_18 scrolling 'All Categories' dropdown");
 		test.log(Status.INFO, "verifing scrolling 'All Categories' dropdown");
 	}
 	@Test
 	public void tc_19() {
-		homepage.clickOn_AllCategoriesDropdown();
+		header.clickOn_AllCategoriesDropdown();
 		Keyword.captureScreenshot("Screenshot/", "AllCategoriesDropdownScr", ".jpg");
-		homepage.clickOn_AllCategoriesDropdown();
+		header.clickOn_AllCategoriesDropdown();
 		Keyword.loggerInfo("verifying by clicking on 'All Categories' Dropdown will it visible or not");
 		test = extent.createTest("tc_19 verifying 'All Categories'Dropdown visibility");
 		test.log(Status.INFO, "verifying 'All Categories'Dropdown will it visible or not ");
 	}
 	@Test
 	public void tc_20() {
-		homepage.clickOn_AllCategoriesDropdown();
-		homepage.selectIndex_AllcategoriesDropDown(36);
+		header.clickOn_AllCategoriesDropdown();
+		header.selectIndex_AllcategoriesDropDown(36);
 		Constants.element = Constants.select.getFirstSelectedOption();
 		Constants.actual = Constants.element.getText();
 		Assert.assertEquals(Constants.actual, "Shoes & Handbags");
@@ -257,19 +258,19 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_21() {
-		homepage.clickOnSearchBtn();
+		header.clickOnSearchBtn();
 		Keyword.windowHandles(0);
 		Constants.actual = Constants.driver.getTitle();
 		System.out.println(Constants.actual);
 		Assert.assertEquals(Constants.actual,
 				"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
-		test = extent.createTest("tc_21 verifying by clicking on search button");
+		test = extent.createTest("tc_21 verifying clickability of search button");
 		test.log(Status.INFO, "verifying search button clickable or not");
 	}
 
 	@Test
 	public void tc_22() {
-		homepage.getSearchBtn_Dimension();
+		header.getSearchBtn_Dimension();
 		Rectangle searchBtnRect = Constants.element.getRect();
 		SoftAssert softassert = new SoftAssert();
 		softassert.assertEquals(searchBtnRect.getHeight(), 38);
@@ -284,8 +285,8 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_23() {
-		homepage.enterTextinSearchBox("Hard Disk");
-		homepage.clickOnSearchBtn();
+		header.enterTextinSearchBox("Hard Disk");
+		header.clickOnSearchBtn();
 		Constants.actual = Constants.driver.getTitle();
 		System.out.println(Constants.actual);
 		Constants.driver.navigate().back();
@@ -298,7 +299,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_24() {
-		Constants.actual = homepage.getColor_SearchBtn();
+		Constants.actual = header.getColor_SearchBtn();
 		Assert.assertEquals(Constants.actual, "rgba(0, 0, 0, 0)");
 		Keyword.loggerInfo("verifing background color of 'search button' dropdown before hover");
 		test = extent.createTest("tc_24 verifying color of 'search button' before hover");
@@ -307,7 +308,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_25() {
-		Constants.actual = homepage.getColor_searchBtn_AfterHover();
+		Constants.actual = header.getColor_searchBtn_AfterHover();
 		Assert.assertEquals(Constants.actual, "rgba(255, 255, 255, 1)");
 		Keyword.loggerInfo("verifing background color of 'search button' dropdown after hovering");
 		test = extent.createTest("tc_25 verifying color of 'search button' after hover");
@@ -316,7 +317,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_26() {
-		homepage.getSerachBtnLogo();
+		header.getSerachBtnLogo();
 		Assert.assertTrue(true);
 		Keyword.loggerInfo("verifying 'Search button' Logo visible or not");
 		test = extent.createTest("tc_26 verifying 'Search button' Logo");
@@ -325,7 +326,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_27() {
-		homepage.getEN_Global_Image();
+		header.getEN_Global_Image();
 		Assert.assertTrue(true);
 		Keyword.loggerInfo("verifying 'global' Image visible or not");
 		test = extent.createTest("tc_27 verifying 'global' Image");
@@ -334,7 +335,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_28() {
-		homepage.getENLanguageText();
+		header.getENLanguageText();
 		Assert.assertEquals(Constants.actual, "EN", "search result text failed");
 		Keyword.loggerInfo("verifying 'EN' text visible or not");
 		test = extent.createTest("tc_28 verifying 'EN' text");
@@ -343,7 +344,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_29() {
-		homepage.clickOnEN_LanguageImage();
+		header.clickOnEN_LanguageImage();
 		Constants.actual = Constants.driver.getTitle();
 		Assert.assertTrue((Constants.actual).contains("Change Language Settings"));
 		Constants.driver.navigate().back();
@@ -355,7 +356,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_30() {
-		homepage.getHelloSignInText();
+		header.getHelloSignInText();
 		Assert.assertEquals(Constants.actual, "Hello, Sign in", "search result text failed");
 		Keyword.loggerInfo("verifying 'Hello. Sign in' text visible or not");
 		test = extent.createTest("tc_30 verifying 'Hello. Sign in' text");
@@ -364,7 +365,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_31() {
-		homepage.getAccountListsText();
+		header.getAccountListsText();
 		Assert.assertEquals(Constants.actual, "Account & Lists", "search result text failed");
 		Keyword.loggerInfo("verifying 'Account & Lists' text visible or not");
 		test = extent.createTest("tc_31 verifying 'Account & Lists' text");
@@ -373,7 +374,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_32() {
-		homepage.clickOnHelloSignIn_AccountList();
+		header.clickOnHelloSignIn_AccountList();
 		Constants.actual = Constants.driver.getTitle();
 		Assert.assertTrue((Constants.actual).contains("Amazon Sign In"));
 		Constants.driver.navigate().back();
@@ -385,7 +386,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_33() {
-		homepage.getReturnText();
+		header.getReturnText();
 		Assert.assertEquals(Constants.actual, "Returns", "search result text failed");
 		Keyword.loggerInfo("verifying 'Returns' text visible or not");
 		test = extent.createTest("tc_33 verifying 'Returns' text");
@@ -394,7 +395,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_34() {
-		homepage.getOrderText();
+		header.getOrderText();
 		Assert.assertEquals(Constants.actual, "& Orders", "search result text failed");
 		Keyword.loggerInfo("verifying '& Orders' text visible or not");
 		test = extent.createTest("tc_34 verifying '& Orders' text");
@@ -403,7 +404,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_35() {
-		homepage.clickOnReturnOrder();
+		header.clickOnReturnOrder();
 		Constants.actual = Constants.driver.getTitle();
 		System.out.println(Constants.actual);
 		Assert.assertTrue((Constants.actual).contains("Amazon Sign In"));
@@ -416,7 +417,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_36() {
-		homepage.getTryText();
+		header.getTryText();
 		Assert.assertEquals(Constants.actual, "Try", "search result text failed");
 		Keyword.loggerInfo("verifying 'Try' text visible or not");
 		test = extent.createTest("tc_36 verifying 'Try' text");
@@ -425,7 +426,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_37() {
-		homepage.getPrimeText();
+		header.getPrimeText();
 		Assert.assertEquals(Constants.actual, "Prime", "search result text failed");
 		Keyword.loggerInfo("verifying 'Prime' text visible or not");
 		test = extent.createTest("tc_37 verifying 'Try' text");
@@ -434,7 +435,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_38() {
-		homepage.clickOnTryPrimeTool();
+		header.clickOnTryPrimeTool();
 		Constants.actual = Constants.driver.getTitle();
 		Assert.assertTrue((Constants.actual).equalsIgnoreCase("Amazon.in: Amazon Prime"));
 		Constants.driver.navigate().back();
@@ -446,7 +447,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_39() {
-		homepage.getCartIcon();
+		header.getCartIcon();
 		Assert.assertTrue(true);
 		Keyword.loggerInfo("verifying 'Cart' Icon visible or not");
 		test = extent.createTest("tc_39 verifying 'Cart' Icon");
@@ -455,7 +456,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_40() {
-		homepage.getCartText();
+		header.getCartText();
 		Assert.assertEquals(Constants.actual, "Cart", "search result text failed");
 		Keyword.loggerInfo("verifying 'Cart' text visible or not");
 		test = extent.createTest("tc_40 verifying 'Cart' text");
@@ -464,7 +465,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_41() {
-		homepage.getZeroNumber();
+		header.getZeroNumber();
 		Assert.assertEquals(Constants.actual, "0", "search result text failed");
 		Keyword.loggerInfo("verifying '0' number visible or not");
 		test = extent.createTest("tc_41 verifying '0' number");
@@ -473,7 +474,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_42() {
-		homepage.clickCartTool();
+		header.clickCartTool();
 		Constants.actual = Constants.driver.getTitle();
 		System.out.println(Constants.actual);
 		Assert.assertTrue((Constants.actual).contains("Amazon.in Shopping Cart"));
@@ -486,7 +487,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_43() {
-		homepage.getyourAddressIcon();
+		header.getyourAddressIcon();
 		Assert.assertTrue(true);
 		Keyword.loggerInfo("verifying 'adress glow' icon  visible or not");
 		test = extent.createTest("tc_43 verifying 'adress glow' Icon");
@@ -495,7 +496,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_44() {
-		homepage.getHelloText();
+		header.getHelloText();
 		Assert.assertEquals(Constants.actual, "Hello", "search result text failed");
 		Keyword.loggerInfo("verifying 'Hello' text visible or not");
 		test = extent.createTest("tc_44 verifying 'Hello' text");
@@ -504,7 +505,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_45() {
-		homepage.getSelectYourAddressText();
+		header.getSelectYourAddressText();
 		Assert.assertEquals(Constants.actual, "Select your address", "search result text failed");
 		Keyword.loggerInfo("verifying 'Select your address' text visible or not");
 		test = extent.createTest("tc_45 verifying 'Select your address' text");
@@ -513,9 +514,9 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_46() {
-		homepage.clickOnSelectYourAddress();
-		homepage.enterPincodeInPincodeBox("444604");
-		homepage.clickOnApplyPincodeBtn();
+		header.clickOnSelectYourAddress();
+		header.enterPincodeInPincodeBox("444604");
+		header.clickOnApplyPincodeBtn();
 		Keyword.loggerInfo(
 				"verifying by clicking on 'select_your_address' element popup will visible or not and entering text on 'address' box and click on 'Apply tab'");
 		test = extent.createTest("tc_46 verifying 'select_your_address' popup clickable or not");
@@ -524,7 +525,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_47() {
-		homepage.clickOnMobile_Option();
+		header.clickOnMobile_Option();
 		Constants.actual = Constants.driver.getTitle();
 		Assert.assertTrue((Constants.actual).contains(
 				"Mobile Phones: Buy New Mobiles Online at Best Prices in India | Buy Cell Phones Online - Amazon.in"));
@@ -537,7 +538,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_48() {
-		homepage.clickOnBest_Sellers_Option();
+		header.clickOnBest_Sellers_Option();
 		Constants.actual = Constants.driver.getTitle();
 		Assert.assertEquals(Constants.actual,"Amazon.in Bestsellers: The most popular items on Amazon");
 		Constants.driver.navigate().back();
@@ -549,7 +550,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_49() {
-		homepage.clickOnPantry_Option();
+		header.clickOnPantry_Option();
 		Constants.actual = Constants.driver.getTitle();
 		System.out.println("PANTRY-"+Constants.actual);
 		Assert.assertEquals(Constants.actual,"Amazon Pantry: The Online Grocery Shopping Store- Shop Daily Grocery Items and Get delivered in Next Day- Amazon.in");
@@ -562,7 +563,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_50() {
-		homepage.clickOnAmazon_Pay_Option();
+		header.clickOnAmazon_Pay_Option();
 		Constants.actual = Constants.driver.getTitle();
 		Assert.assertEquals(Constants.actual,"Amazon Pay");
 		Constants.driver.navigate().back();
@@ -574,7 +575,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_51() {
-		homepage.clickOnComputers_Option();
+		header.clickOnComputers_Option();
 		Constants.actual = Constants.driver.getTitle();
 		Assert.assertEquals(Constants.actual,"Computers & Accessories: Buy Computers & Accessories Online at Low Prices in India - Amazon.in");
 		Constants.driver.navigate().back();
@@ -586,7 +587,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_52() {
-		homepage.clickOnNew_Releases_Option();
+		header.clickOnNew_Releases_Option();
 		Constants.actual = Constants.driver.getTitle();
 		Assert.assertEquals(Constants.actual,"Amazon.in Hot New Releases: The bestselling new and future releases on Amazon");
 		Constants.driver.navigate().back();
@@ -597,7 +598,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_53() {
-		homepage.clickOnBooks_Option();
+		header.clickOnBooks_Option();
 		Constants.actual = Constants.driver.getTitle();
 		System.out.println("BOOK-"+Constants.actual);
 		Assert.assertEquals(Constants.actual,"Book Store Online : Buy Books Online at Best Prices in India | Books Shopping @ Amazon.in");
@@ -610,7 +611,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_54() {
-		homepage.clickOnCustomer_Service_Option();
+		header.clickOnCustomer_Service_Option();
 		Constants.actual = Constants.driver.getTitle();
 		System.out.println("Costumet service-"+Constants.actual);
 		Assert.assertEquals(Constants.actual,"Amazon.in Help: Help");
@@ -624,7 +625,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_55() {
-		homepage.clickOnSell_Option();
+		header.clickOnSell_Option();
 		Constants.actual = Constants.driver.getTitle();
 		System.out.println("CART"+Constants.actual);
 		Assert.assertEquals(Constants.actual,"Amazon.in: Selling on Amazon - Start Selling Now");
@@ -637,7 +638,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_56() {
-		homepage.clickOnGift_Ideas_Option();
+		header.clickOnGift_Ideas_Option();
 		Constants.actual = Constants.driver.getTitle();
 		System.out.println("GIFT-"+Constants.actual);
 		Assert.assertEquals(Constants.actual,"Amazon.in Shopping Cart");
@@ -650,7 +651,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_57() {
-		homepage.clickOnBaby_Option();
+		header.clickOnBaby_Option();
 		Constants.actual = Constants.driver.getTitle();
 		System.out.println(Constants.actual);
 		Assert.assertTrue((Constants.actual).contains("Amazon.in Shopping Cart"));
@@ -663,7 +664,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_58() {
-		homepage.clickOnAmazon_Basics_Option();
+		header.clickOnAmazon_Basics_Option();
 		Constants.actual = Constants.driver.getTitle();
 		System.out.println(Constants.actual);
 		Assert.assertTrue((Constants.actual).contains("Amazon.in Shopping Cart"));
@@ -676,7 +677,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_59() {
-		homepage.getYourListsText();
+		header.getYourListsText();
 		Constants.expected = "Your Lists";
 		Assert.assertEquals(Constants.actual, Constants.expected);
 		Keyword.loggerInfo("verifying 'Your Lists' text visible or not");
@@ -686,7 +687,7 @@ public class HomePageTests extends ExtentsReport {
 	}
 	@Test
 	public void tc_60() {
-		homepage.getYourListsItems();
+		header.getYourListsItems();
 		List<WebElement> list = Constants.driver.findElements(By.cssSelector(PropertyUtility.getProperty("YourList")));
 		Constants.actualList = new ArrayList();
 		Iterator<WebElement> itr = list.iterator();
@@ -702,7 +703,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_61() {
-		homepage.getYourAccountText();
+		header.getYourAccountText();
 		Constants.expected = "Your Account";
 		Assert.assertEquals(Constants.actual, Constants.expected);
 		Keyword.loggerInfo("verifying 'Your Account' text visible or not");
@@ -712,7 +713,7 @@ public class HomePageTests extends ExtentsReport {
 
 	@Test
 	public void tc_62() {
-		homepage.getyourAccountItems();
+		header.getyourAccountItems();
 		List<WebElement> list = Constants.driver
 				.findElements(By.cssSelector(PropertyUtility.getProperty("YourAccount")));
 		Constants.actualList = new ArrayList();

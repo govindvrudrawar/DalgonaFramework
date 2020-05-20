@@ -17,7 +17,7 @@ import com.config.Constants;
 import com.config.Keyword;
 import com.utility.PropertyUtility;
 
-public class HomePage {
+public class Header {
 	@FindBy(css = "#nav-hamburger-menu")
 	private WebElement menuBtn;
 	@FindBy(css = "#hmenu-customer-avatar-icon")
@@ -122,7 +122,7 @@ public class HomePage {
 	private WebElement yourAccountItems;
 
 	// This is to Initializing the page Objects
-	public HomePage() {
+	public Header() {
 		PageFactory.initElements(Constants.driver, this); // we can also write (currentclassname.class)
 	}
 
